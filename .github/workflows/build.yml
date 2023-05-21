@@ -22,7 +22,7 @@ jobs:
       - name: Run build
         run: |
           chmod +x build.sh
-          ./build.sh
+          ./build.sh ${{ matrix.config.app }}
 
       - name: Add files to repo
         uses: dmnemec/copy_file_to_another_repo_action@main
