@@ -9,6 +9,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - app: cd
+          - app: dir
+          - app: list
 
     steps:
       - uses: actions/checkout@v3

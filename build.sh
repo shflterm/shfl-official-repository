@@ -1,8 +1,4 @@
-for FILE in *; do 
-    if [ -d "$FILE" ]; then
-        cd $FILE
-        zip $FILE.sapp -r *
-        mv "$FILE.sapp" ../$FILE.sapp
-        cd ..
-    fi
-done
+cd $1
+zip $1.sapp -r *
+mv "$1.sapp" ../$1.sapp
+cd ..
