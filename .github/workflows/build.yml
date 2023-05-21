@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a multi-line script
-        run: ./build
+      - name: Run build
+        run: ./build.bat
 
       - name: Add files to repo
         uses: dmnemec/copy_file_to_another_repo_action@main
