@@ -1,0 +1,9 @@
+{
+  "children": [
+    {
+      "type": "option",
+      "name": "path",
+      "description": "Specifying where to go"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "version": 2,
+  "libpath": "lib/entrypoint.lua"
+}
