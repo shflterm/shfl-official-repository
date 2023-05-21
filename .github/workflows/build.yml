@@ -1,0 +1,29 @@
+name: Build commands
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run a multi-line script
+        run: ./build
+
+      - name: Add files to repo
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: '*.sapp'
+          destination_repo: 'shflterm/apps'
+          destination_folder: ''
+          user_email: '08sihu@gmail.com'
+          user_name: 'ssyuk'
+          commit_message: 'Update'
