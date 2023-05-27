@@ -1,21 +1,10 @@
-local function getParentPath(path)
-    pattern1 = "^(.+)//"
-    pattern2 = "^(.+)\\"
-
-    if (string.match(path, pattern1) == nil) then
-        return string.match(path, pattern2)
-    else
-        return string.match(path, pattern1)
-    end
-end
-
 function entrypoint()
     local to = args[1]
     if to == nil then
         to = "."
     end
     if to == ".." then
-        workspace.dir = tostring(getParentPath(workspace.dir))
+        workspace.dir = fs.parentDir(workspace.dir)
     else
         if fs.exists(workspace.dir .. "/" .. to) then
             workspace.dir = workspace.dir .. "/" .. to
