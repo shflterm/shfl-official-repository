@@ -1,4 +1,3 @@
 {
-  "version": 2,
-  "libpath": "lib/entrypoint.lua"
+  "version": 1
 }

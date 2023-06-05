@@ -6,8 +6,8 @@ function entrypoint()
     if to == ".." then
         workspace.dir = fs.parentDir(workspace.dir)
     else
-        if fs.exists(workspace.dir .. "/" .. to) then
-            workspace.dir = workspace.dir .. "/" .. to
+        if fs.exists(to) then
+            workspace.dir = to
         else
             error("Directory does not exist.")
         end
@@ -18,7 +18,7 @@ function suggest()
     if suggestId == "path" then
         local suggestions = { ".." }
         for _, file in pairs(fs.list(workspace.dir)) do
-            if fs.isDir(workspace.dir .. "/" .. file) then
+            if fs.isDir(file) then
                 table.insert(suggestions, file)
             end
         end
