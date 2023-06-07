@@ -1,0 +1,28 @@
+{
+  "children": [
+    {
+      "type": "subcommand",
+      "name": "dir",
+      "description": "create a directory",
+      "children": [
+        {
+          "type": "option",
+          "name": "path",
+          "description": "Specifies the name of the directory to create"
+        }
+      ]
+    },
+    {
+      "type": "subcommand",
+      "name": "file",
+      "description": "create a file",
+      "children": [
+        {
+          "type": "option",
+          "name": "path",
+          "description": "Specifies the name of the file to create"
+        }
+      ]
+    }
+  ]
+}
