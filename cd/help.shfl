@@ -1,4 +1,5 @@
 {
+  "description": "Move current directory",
   "children": [
     {
       "type": "option",
