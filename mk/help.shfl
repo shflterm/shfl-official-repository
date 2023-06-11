@@ -1,4 +1,5 @@
 {
+  "description": "Create directory or file",
   "children": [
     {
       "type": "subcommand",
