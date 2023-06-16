@@ -17,6 +17,7 @@ jobs:
           - app: dir
           - app: list
           - app: mk
+          - app: rm
 
     steps:
       - uses: actions/checkout@v3
