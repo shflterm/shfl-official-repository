@@ -1,0 +1,10 @@
+{
+  "description": "Delete file or directory",
+  "children": [
+    {
+      "type": "option",
+      "name": "path",
+      "description": "Specifies which files (directories) to delete"
+    }
+  ]
+}
