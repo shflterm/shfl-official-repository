@@ -26,9 +26,9 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: "${{ matrix.config.app }}.sapp"
+          source_file: "*.sapp"
           destination_repo: "shflterm/apps"
           destination_folder: ""
           user_email: "08sihu@gmail.com"
           user_name: "ssyuk"
-          commit_message: "Update ${{ matrix.config.app }}"
+          commit_message: "Update"
