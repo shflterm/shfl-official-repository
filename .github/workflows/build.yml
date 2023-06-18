@@ -10,25 +10,28 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - app: cd
+          - app: cp
+          - app: dir
+          - app: list
+          - app: mk
+          - app: rm
 
     steps:
       - uses: actions/checkout@v3
 
       - name: Run build
-        env:
-          FILES: cd cp dir list mk rm
         run: |
           chmod +x build.sh
-          for f in $FILES; do ./build.sh $f; done
+          ./build.sh ${{ matrix.config.app }}
 
-      - name: Add files to repo
-        uses: dmnemec/copy_file_to_another_repo_action@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      - name: Upload Release
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          source_file: "*.sapp"
-          destination_repo: "shflterm/apps"
-          destination_folder: ""
-          user_email: "08sihu@gmail.com"
-          user_name: "ssyuk"
-          commit_message: "Update"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ matrix.config.app }}"
+          files: |
+            ${{ matrix.config.app }}.sapp
