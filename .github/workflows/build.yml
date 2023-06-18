@@ -10,15 +10,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        config:
-          - app:
-          - app:
-          - app:
-          - app:
-          - app:
-          - app:
 
     steps:
       - uses: actions/checkout@v3
