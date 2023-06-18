@@ -13,20 +13,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - app: cd
-          - app: cp
-          - app: dir
-          - app: list
-          - app: mk
-          - app: rm
+          - app:
+          - app:
+          - app:
+          - app:
+          - app:
+          - app:
 
     steps:
       - uses: actions/checkout@v3
 
       - name: Run build
+        env:
+          FILES: cd cp dir list mk rm
         run: |
           chmod +x build.sh
-          ./build.sh ${{ matrix.config.app }}
+          for f in $FILES; do ./build.sh $f; done
 
       - name: Add files to repo
         uses: dmnemec/copy_file_to_another_repo_action@main
