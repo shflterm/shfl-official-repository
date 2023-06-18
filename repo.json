@@ -1,5 +1,5 @@
 {
   "version": 1,
   "repo": "shflterm",
-  "download_at": "https://raw.githubusercontent.com/shflterm/apps/main/{APP}.sapp",
+  "download_at": "https://github.com/shflterm/apps/releases/download/{APP}/{APP}.sapp",
 }
