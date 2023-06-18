@@ -1,0 +1,16 @@
+{
+  "children": [
+    {
+      "type": "option",
+      "name": "from",
+      "description": "file to be copied",
+      "children": [
+        {
+          "type": "option",
+          "name": "to",
+          "description": "Destination path"
+        },
+      ]
+    },
+  ]
+}
