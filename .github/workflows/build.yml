@@ -18,6 +18,7 @@ jobs:
           - app: dir
           - app: list
           - app: mk
+          - app: mv
           - app: rm
 
     steps:

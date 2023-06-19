@@ -1,5 +1,5 @@
 {
-  "description": "Copy a file to a specific directory",
+  "description": "Move a file to a specific directory",
   "children": [
     {
       "type": "option",
