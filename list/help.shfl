@@ -1,10 +1,9 @@
 {
   "description": "Print a list of files in the current directory",
-  "children": [
+  "example": [
     {
-      "type": "option",
-      "name": "path",
-      "description": "Specifying where to go"
+      "usage": "list",
+      "description": "Print a list of files in the current directory"
     }
   ]
 }

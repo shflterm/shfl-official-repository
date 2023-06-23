@@ -1,3 +1,9 @@
 {
   "description": "Print current directory",
+  "example": [
+    {
+      "usage": "dir",
+      "description": "Print current diretory"
+    }
+  ]
 }
