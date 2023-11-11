@@ -1,9 +1,0 @@
-{
-  "description": "Print a list of files in the current directory",
-  "example": [
-    {
-      "usage": "list",
-      "description": "Print a list of files in the current directory"
-    }
-  ]
-}

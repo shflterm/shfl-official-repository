@@ -1,0 +1,41 @@
+{
+  "name": "sb-test",
+  "description": "Test Subcommand",
+  "author": "Kim Sihu",
+  "version": "0.0.1",
+  "api-version": 1,
+  "commands": [
+    {
+      "name": "print",
+      "usage": "print <text>",
+      "description": "Test command",
+      "subcommands": [
+        {
+          "name": "yellow",
+          "usage": "print yellow <text>",
+          "description": "Test command",
+          "options": [
+            {
+              "name": "text",
+              "type": "string",
+              "description": "Text to print"
+            }
+          ],
+          "examples": [
+            "print yellow Hello"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Text to print"
+        }
+      ],
+      "examples": [
+        "print Hello"
+      ]
+    }
+  ]
+}
