@@ -1,4 +1,4 @@
 cd $1
-zip $1.sapp -r *
-mv "$1.sapp" ../$1.sapp
+zip $1.app -r *
+mv "$1.app" ../$1.app
 cd ..
