@@ -1,4 +1,4 @@
 cd $1
-zip $1.app -r *
-mv "$1.app" ../$1.app
+zip $1.shflapp -r *
+mv "$1.shflapp" ../$1.shflapp
 cd ..
