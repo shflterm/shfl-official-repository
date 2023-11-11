@@ -30,4 +30,4 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "${{ matrix.config.app }}"
           files: |
-            ${{ matrix.config.app }}.sapp
+            ${{ matrix.config.app }}.app
