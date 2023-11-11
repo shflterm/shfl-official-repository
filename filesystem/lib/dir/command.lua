@@ -1,3 +1,3 @@
 function entrypoint()
-    print("Hello, world!")
+    print(workspace.dir)
 end
