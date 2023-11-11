@@ -1,0 +1,56 @@
+{
+  "name": "textutilities",
+  "description": "A collection of text utilities",
+  "author": "Shuffle",
+  "version": "0.0.1",
+  "api-version": 1,
+  "commands": [
+    {
+      "name": "echo",
+      "usage": "echo <text>",
+      "description": "Prints text to the console",
+      "options": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "The text to print"
+        }
+      ],
+      "examples": [
+        "echo Hello world!",
+        "echo \"Hello world!\""
+      ]
+    },
+    {
+      "name": "capitalize",
+      "usage": "capitalize <text>",
+      "description": "Capitalizes the first letter of each word in the text",
+      "options": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "The text to capitalize"
+        }
+      ],
+      "examples": [
+        "capitalize hello world",
+        "capitalize \"hello world\""
+      ]
+    },
+    {
+      "name": "trim",
+      "usage": "trim <text>",
+      "description": "Removes whitespace from the beginning and end of the text",
+      "options": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "The text to trim"
+        }
+      ],
+      "examples": [
+        "trim \" hello world \""
+      ]
+    }
+  ]
+}

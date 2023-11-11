@@ -52,11 +52,11 @@
       ]
     },
     {
-      "name": "dir",
-      "usage": "dir",
+      "name": "cdir",
+      "usage": "cdir",
       "description": "Show current directory",
       "examples": [
-        "dir"
+        "cdir"
       ]
     },
     {
