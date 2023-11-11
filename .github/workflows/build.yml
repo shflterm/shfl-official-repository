@@ -13,13 +13,8 @@ jobs:
     strategy:
       matrix:
         config:
-          - app: cd
-          - app: cp
-          - app: dir
-          - app: list
-          - app: mk
-          - app: mv
-          - app: rm
+          - app: filesystem
+          - app: subcommand-test
 
     steps:
       - uses: actions/checkout@v3
