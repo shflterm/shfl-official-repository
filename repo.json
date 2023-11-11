@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "repo": "shflterm",
-  "download_at": "https://github.com/shflterm/apps/releases/download/{APP}/{APP}.sapp",
+  "repo": "Shuffle Official Repository",
+  "download_at": "https://github.com/shflterm/apps/releases/download/{APP}/{APP}.shflapp",
 }
