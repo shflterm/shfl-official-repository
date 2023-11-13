@@ -1,10 +1,10 @@
 function entrypoint()
-    local target = path
+    local target = name
     if target == nil then
-        error("No source path specified.")
+        error("No path specified.")
     end
     if not fs.exists(target) then
-        error("Source path does not exist.")
+        error("Path does not exist.")
     end
 
     fs.mkDir(target)
