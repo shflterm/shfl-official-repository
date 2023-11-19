@@ -2,9 +2,10 @@ function entrypoint()
     local value = text
 
     if value == nil then
-        print("")
+        info("")
         return
     end
 
-    print(value)
+    info(value)
+    return value
 end

@@ -1,3 +1,5 @@
 function entrypoint()
-    print(workspace.dir)
+    local res = fs.absolute(workspace.dir)
+    print(res)
+    return res
 end

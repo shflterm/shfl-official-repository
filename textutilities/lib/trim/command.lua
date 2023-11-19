@@ -2,9 +2,11 @@ function entrypoint()
     local value = text
 
     if value == nil then
-        print("")
-        return
+        info("")
+        return ""
     end
 
-    print(value:match'^()%s*$' and '' or value:match'^%s*(.*%S)')
+    local result = value:match'^()%s*$' and '' or value:match'^%s*(.*%S)'
+    info(result)
+    return result
 end

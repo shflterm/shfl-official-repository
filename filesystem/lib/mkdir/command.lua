@@ -8,4 +8,5 @@ function entrypoint()
     end
 
     fs.mkDir(target)
+    return fs.absolute(target)
 end

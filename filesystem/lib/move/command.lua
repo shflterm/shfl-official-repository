@@ -15,4 +15,5 @@ function entrypoint()
     end
 
     fs.move(from, to)
+    return fs.absolute(to)
 end

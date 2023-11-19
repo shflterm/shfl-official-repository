@@ -8,4 +8,5 @@ function entrypoint()
     end
 
     fs.remove(target)
+    return fs.absolute(target)
 end

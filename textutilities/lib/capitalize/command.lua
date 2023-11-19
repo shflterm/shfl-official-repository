@@ -2,10 +2,12 @@ function entrypoint()
     local value = text
 
     if value == nil then
-        print("")
+        info("")
         return
     end
 
     value = value:gsub("%a", string.upper, 1)
-    print(value)
+
+    info(value)
+    return value
 end

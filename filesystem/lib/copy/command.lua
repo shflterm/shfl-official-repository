@@ -15,4 +15,5 @@ function entrypoint()
     end
 
     fs.copy(from, to)
+    return fs.absolute(to)
 end

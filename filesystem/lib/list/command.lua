@@ -6,4 +6,6 @@ function entrypoint()
             print(file)
         end
     end
+
+    return "TODO"
 end

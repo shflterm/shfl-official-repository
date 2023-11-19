@@ -13,4 +13,6 @@ function entrypoint()
             error("Directory does not exist.")
         end
     end
+
+    return fs.absolute(workspace.dir)
 end
