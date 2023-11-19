@@ -3,7 +3,7 @@ function entrypoint()
 
     if value == nil then
         info("")
-        return
+        return ""
     end
 
     info(value)

@@ -22,6 +22,22 @@
       ]
     },
     {
+      "name": "print",
+      "usage": "print <text>",
+      "description": "Prints text to the console WITHOUT a newline character at the end",
+      "options": [
+        {
+          "name": "text",
+          "type": "string",
+          "description": "The text to print"
+        }
+      ],
+      "examples": [
+        "print Hello world!",
+        "print \"Hello world!\""
+      ]
+    },
+    {
       "name": "capitalize",
       "usage": "capitalize <text>",
       "description": "Capitalizes the first letter of each word in the text",
@@ -50,6 +66,14 @@
       ],
       "examples": [
         "trim \" hello world \""
+      ]
+    },
+    {
+      "name": "input",
+      "usage": "input",
+      "description": "Reads input from the console",
+      "examples": [
+        "input"
       ]
     }
   ]
