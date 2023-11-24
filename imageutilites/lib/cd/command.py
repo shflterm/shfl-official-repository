@@ -1,18 +1,14 @@
-import sys
 from pathlib import Path
-
-import shfl
-
+import sys
 
 def entrypoint(ws, options, bg_mode):
     to = Path(options["path"])
-    currentDir = Path(shfl.currentDirectory(ws))
     if to == "..":
-        shfl.moveDirectory(ws, currentDir.parent)
+        ws.dir = to.parent.absolute()
     else:
         if to.exists():
-            shfl.moveDirectory(ws, str(to))
+            ws.dir = to
         else:
             print("Directory does not exist.", file=sys.stderr)
 
-    return str(currentDir.absolute())
+    return ws.dir.absolute()

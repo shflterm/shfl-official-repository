@@ -1,9 +1,7 @@
 from pathlib import Path
 
-import shfl
-
 
 def entrypoint(ws, options, bg_mode):
-    dir = Path(shfl.currentDirectory(ws))
+    dir = Path(ws.dir)
     print(dir.absolute())
-    return str(dir.absolute())
+    return dir.absolute()
