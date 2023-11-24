@@ -1,0 +1,132 @@
+{
+  "name": "filesystem",
+  "description": "Filesystem commands",
+  "author": "Shuffle",
+  "version": "0.0.1",
+  "api-version": 2,
+  "python-pkgs": [
+    "pillow"
+  ],
+  "commands": [
+    {
+      "name": "ctimg",
+      "usage": "ctimg <img> <type>",
+      "description": "Change the type of an image",
+      "options": [
+        {
+          "name": "img",
+          "type": "file",
+          "description": "The image to change"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "The type to change the image to"
+        }
+      ],
+      "examples": [
+        "ctimg image.png jpg",
+        "ctimg image.png webp"
+      ]
+    },
+    {
+      "name": "rsimg",
+      "usage": "rsimg <img> <width>",
+      "description": "Resize an image",
+      "options": [
+        {
+          "name": "img",
+          "type": "file",
+          "description": "The image to resize"
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "description": "The width to resize the image to"
+        }
+      ],
+      "examples": [
+        "rsimg image.png 500",
+        "rsimg image.jpg 1000"
+      ]
+    },
+    {
+      "name": "rotimg",
+      "usage": "rotimg <img> <degrees>",
+      "description": "Rotate an image",
+      "options": [
+        {
+          "name": "img",
+          "type": "file",
+          "description": "The image to rotate"
+        },
+        {
+          "name": "degrees",
+          "type": "number",
+          "description": "The degrees to rotate the image by"
+        }
+      ],
+      "examples": [
+        "rotimg image.png 90",
+        "rotimg image.jpg 180"
+      ]
+    },
+    {
+      "name": "crop",
+      "usage": "crop <img> <x> <y> <width> <height> <output>",
+      "description": "Crop an image",
+      "options": [
+        {
+          "name": "img",
+          "type": "file",
+          "description": "The image to crop"
+        },
+        {
+          "name": "x",
+          "type": "number",
+          "description": "The x position to start cropping from"
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "description": "The y position to start cropping from"
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "description": "The width to crop the image to"
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "description": "The height to crop the image to"
+        },
+        {
+          "name": "output",
+          "type": "file",
+          "description": "The output file"
+        }
+      ],
+      "examples": [
+        "crop image.png 0 0 500 500 output.png",
+        "crop image.jpg 100 100 1000 1000 output.jpg"
+      ]
+    },
+    {
+      "name": "imginfo",
+      "usage": "imginfo <img>",
+      "description": "Get information about an image",
+      "options": [
+        {
+          "name": "img",
+          "type": "file",
+          "description": "The image to get information about"
+        }
+      ],
+      "examples": [
+        "imginfo image.png",
+        "imginfo image.jpg"
+      ]
+    }
+  ]
+}
