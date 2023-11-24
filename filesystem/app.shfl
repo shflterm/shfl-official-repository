@@ -12,7 +12,7 @@
       "options": [
         {
           "name": "path",
-          "type": "string",
+          "type": "directory",
           "description": "Path to change to"
         }
       ],
@@ -28,7 +28,7 @@
       "options": [
         {
           "name": "source",
-          "type": "string",
+          "type": "fileordir",
           "description": "Source file or directory",
           "aliases": [
             "src"
@@ -36,7 +36,7 @@
         },
         {
           "name": "destination",
-          "type": "string",
+          "type": "directory",
           "description": "Destination file or directory",
           "aliases": [
             "dest"
@@ -74,7 +74,7 @@
       "options": [
         {
           "name": "name",
-          "type": "string",
+          "type": "text",
           "description": "Name of directory to create"
         }
       ],
@@ -93,7 +93,7 @@
       "options": [
         {
           "name": "source",
-          "type": "string",
+          "type": "fileordir",
           "description": "Source file or directory",
           "aliases": [
             "src"
@@ -101,7 +101,7 @@
         },
         {
           "name": "destination",
-          "type": "string",
+          "type": "directory",
           "description": "Destination file or directory",
           "aliases": [
             "dest"
@@ -123,7 +123,7 @@
       "options": [
         {
           "name": "path",
-          "type": "string",
+          "type": "fileordir",
           "description": "File or directory to remove"
         }
       ],
