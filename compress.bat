@@ -11,8 +11,8 @@ for /r %%i in (*.dll) do (
     copy "%%i" ..\..\temp\lib
 )
 
-for /r ..\..\temp-%1\ %%i in (*.dll) do (
-    move "%%i" "%%~dpi\lib\command.dll"
+for /r ..\..\temp\ %%i in (*.dll) do (
+    move "%%i" "%%~dpi\command.dll"
 )
 
 copy %1\app.shfl ..\..\temp\

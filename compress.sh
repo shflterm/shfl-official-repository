@@ -3,6 +3,7 @@ cmake --build build
 
 rm -rf temp
 mkdir temp
+mkdir temp/lib
 cd build/$1
 
 os_type=$(uname -s)
