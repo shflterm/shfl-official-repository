@@ -18,9 +18,11 @@ elif [ "$os_type" == "Linux" ]; then
   os=ubuntu
 fi
 
-cp $1/app.shfl ../../temp/
+cd ../..
 
-cd ../../temp
+cp $1/app.shfl temp/
+
+cd temp
 zip -r $1.zip *
 mv $1.zip ../$1_$os.shflapp
 cd ..
