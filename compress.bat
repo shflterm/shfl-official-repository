@@ -12,7 +12,7 @@ for /r %%i in (*.dll) do (
 )
 
 for /r ..\..\temp\lib\ %%i in (*.dll) do (
-    move "%%i" "%%~dpi\command.dll"
+    move "%%i" "%%~dpi\%%i\command.dll"
 )
 
 cd ..\..
