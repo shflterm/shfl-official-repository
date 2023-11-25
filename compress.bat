@@ -4,15 +4,13 @@ cmake -S . -B build
 cmake --build build
 
 rmdir /s /q temp
-mkdir temp\lib
+mkdir temp
 cd build\%1
 
 for /r %%i in (*.dll) do (
-    copy "%%i" ..\..\temp\lib\
-)
-
-for /r ..\..\temp\lib\ %%i in (*.dll) do (
-    move "%%i" "%%~dpi\%%i\command.dll"
+    set filename=%%~ni
+    mkdir ..\..\temp\lib\%%~ni
+    copy "%%i" ..\..\temp\lib\%%~ni\command.dll
 )
 
 cd ..\..
