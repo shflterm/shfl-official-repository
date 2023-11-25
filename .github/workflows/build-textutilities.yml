@@ -1,0 +1,36 @@
+name: Build commands
+
+on:
+  push:
+    branches: ["main"]
+    
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ${{ matrix.config.os }}-latest
+    strategy:
+      matrix:
+        config:
+          - os: windows
+            cmd: compress.bat
+          - os: ubuntu
+            cmd: compress.sh
+          - os: macos
+            cmd: compress.sh
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build TextUtilities App
+        run: |
+          ${{ matrix.config.cmd }} textutilities
+
+      - name: Upload Release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "textutilities_${{ matrix.config.os }}"
+          files: |
+            textutilities_${{ matrix.config.os }}.shflapp
