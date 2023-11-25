@@ -13,12 +13,12 @@ def entrypoint(ws, options, bg_mode):
     if not src.exists():
         print("Source path does not exist")
         return "SRC_NOT_EXIST"
-    if not dest.exists():
-        print("Destination path does not exist")
-        return "DEST_NOT_EXIST"
     if not dest.is_dir():
         print("Destination path is not a directory")
         return "DEST_NOT_DIR"
+    if not dest.exists():
+        print("Destination path does not exist")
+        return "DEST_NOT_EXIST"
 
     if src.is_dir():
         shutil.copytree(str(src), str(dest / src.name))
