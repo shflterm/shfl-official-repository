@@ -7,6 +7,8 @@ cd build/$1
 
 os_type=$(uname -s)
 
+echo "Current OS: $os_type"
+
 if [ "$os_type" == "Darwin" ]; then
   find . -name '*.dylib' -exec sh -c "cp --parents "{}" ../../temp-$1" \;
   find ../../temp-$1 -type f -name '*.dylib' -exec sh -c 'mv "{}" "$(dirname "{}")/command.dylib"' \;
