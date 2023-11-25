@@ -1,4 +1,4 @@
-name: Build commands
+name: Build TextUtilities
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Build TextUtilities App
         run: |
-          ${{ matrix.config.cmd }} textutilities
+          ./${{ matrix.config.cmd }} textutilities
 
       - name: Upload Release
         uses: "marvinpinto/action-automatic-releases@latest"
