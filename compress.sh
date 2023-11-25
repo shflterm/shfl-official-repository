@@ -1,5 +1,5 @@
 cmake -S . -B build/
-cmake --build build
+cmake --build build --config Release
 
 rm -rf temp
 mkdir -p temp/lib
