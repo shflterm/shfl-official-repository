@@ -2,8 +2,7 @@ cmake -S . -B build/
 cmake --build build
 
 rm -rf temp
-mkdir temp
-mkdir temp/lib
+mkdir -p temp/lib
 cd build/$1
 
 os_type=$(uname -s)
