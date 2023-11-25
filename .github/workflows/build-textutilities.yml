@@ -14,10 +14,13 @@ jobs:
       matrix:
         config:
           - os: windows
+            os_name: windows
             cmd: compress.bat
           - os: ubuntu
+            os_name: linux
             cmd: compress.sh
           - os: macos
+            os_name: macos
             cmd: compress.sh
 
     steps:
@@ -41,6 +44,6 @@ jobs:
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "textutilities_${{ matrix.config.os }}"
+          automatic_release_tag: "textutilities_${{ matrix.config.os_name }}"
           files: |
-            textutilities_${{ matrix.config.os }}.shflapp
+            textutilities_${{ matrix.config.os_name }}.shflapp

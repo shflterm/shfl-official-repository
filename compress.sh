@@ -10,12 +10,12 @@ os_type=$(uname -s)
 echo "Current OS: $os_type"
 
 if [ "$os_type" == "Darwin" ]; then
-  find . -name '*.dylib' -exec sh -c 'mkdir -p ../../temp-$1/"$(dirname "{}")" && cp "{}" ../../temp-$1/"$(dirname "{}")/command.dylib"' \;
+  find . -name '*.dylib' -exec sh -c 'mkdir -p ../../temp/"$(dirname "{}")" && cp "{}" ../../temp/"$(dirname "{}")/command.dylib"' \;
   os=macos
 elif [ "$os_type" == "Linux" ]; then
   find . -name '*.so' -exec sh -c "cp --parents "{}" ../../temp" \;
   find ../../temp -type f -name '*.so' -exec sh -c 'mv "{}" "$(dirname "{}")/command.so"' \;
-  os=ubuntu
+  os=linux
 fi
 
 cd ../..
