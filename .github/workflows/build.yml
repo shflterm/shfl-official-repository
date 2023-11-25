@@ -15,6 +15,7 @@ jobs:
         config:
           - app: filesystem
           - app: textutilities
+          - app: imageutilities
 
     steps:
       - uses: actions/checkout@v3

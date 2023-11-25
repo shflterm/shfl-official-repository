@@ -5,11 +5,11 @@ import shfl
 
 
 def entrypoint(ws, options, bg_mode):
-    to = Path(options["path"])
     currentDir = Path(shfl.currentDirectory(ws))
-    if to == "..":
-        shfl.moveDirectory(ws, currentDir.parent)
+    if options["path"] == "..":
+        shfl.moveDirectory(ws, str(currentDir.parent))
     else:
+        to = currentDir / options["path"]
         if to.exists():
             shfl.moveDirectory(ws, str(to))
         else:
