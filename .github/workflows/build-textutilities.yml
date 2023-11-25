@@ -31,6 +31,12 @@ jobs:
         run: |
           ./${{ matrix.config.cmd }} textutilities
 
+      - name: Upload Files
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-${{ matrix.config.os }}
+          path: ${{github.workspace}}/**
+
       - name: Upload Release
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
