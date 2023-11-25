@@ -7,14 +7,14 @@ cd build/$1
 
 os_type=$(uname -s)
 
-if [ "$os_type" == "macos" ]; then
+if [ "$os_type" == "Darwin" ]; then
   find . -name '*.dylib' -exec sh -c "cp --parents "{}" ../../temp-$1" \;
   find ../../temp-$1 -type f -name '*.dylib' -exec sh -c 'mv "{}" "$(dirname "{}")/command.dylib"' \;
   os=macos
 elif [ "$os_type" == "Linux" ]; then
   find . -name '*.so' -exec sh -c "cp --parents "{}" ../../temp-$1" \;
   find ../../temp-$1 -type f -name '*.so' -exec sh -c 'mv "{}" "$(dirname "{}")/command.so"' \;
-  os=linux
+  os=ubuntu
 fi
 
 cp $1/app.shfl ../../temp-$1/
