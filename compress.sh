@@ -25,4 +25,3 @@ cd ../../temp-$1
 zip -r $1.zip *
 mv $1.zip ../$1_$os.shflapp
 cd ..
-rm -rf temp-$1
