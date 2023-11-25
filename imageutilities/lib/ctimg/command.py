@@ -5,7 +5,7 @@ import shfl
 
 
 def entrypoint(ws, options, bg_mode):
-    current_dir = Path(shfl.current_dir(ws))
+    current_dir = Path(shfl.currentDirectory(ws))
 
     imgName = options["img"]
     imgFormat = options["format"]
