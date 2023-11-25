@@ -4,6 +4,12 @@
 
 using namespace std;
 
+#ifdef _WIN32
+#define EXPORT __declspec(dllexport)
+#else
+#define EXPORT
+#endif
+
 const string WHITESPACE = " \n\r\t\f\v";
 
 string ltrim(const string&s) {
@@ -18,7 +24,7 @@ string rtrim(const string&s) {
 
 string trim(const string&s) { return rtrim(ltrim(s)); }
 
-extern "C" string entrypoint(string ws, map<string, string>&options, bool bgMode) {
+extern "C" EXPORT string entrypoint(string ws, map<string, string>&options, bool bgMode) {
     string text = trim(options["text"]);
     if (!bgMode) cout << text << endl;
     return text;
