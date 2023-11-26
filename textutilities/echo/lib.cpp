@@ -5,7 +5,7 @@
 
 using namespace std;
 
-COMMAND_MAIN(Workspace ws, map<string, string>&options, bool bgMode) {
+COMMAND_MAIN(Workspace* ws, map<string, string>&options, bool bgMode) {
     string text = options["text"];
     if (!bgMode) info(text);
     return text;

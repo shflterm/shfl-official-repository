@@ -5,7 +5,7 @@
 
 using namespace std;
 
-COMMAND_MAIN(Workspace ws, map<string, string>&options, bool bgMode) {
+COMMAND_MAIN(Workspace* ws, map<string, string>&options, bool bgMode) {
     string input;
     getline(cin, input);
     if (!bgMode) info(input);
