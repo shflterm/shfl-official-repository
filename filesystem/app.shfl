@@ -37,7 +37,7 @@
         {
           "name": "destination",
           "type": "directory",
-          "description": "Destination file or directory",
+          "description": "Destination directory",
           "aliases": [
             "dest"
           ]
@@ -102,7 +102,7 @@
         {
           "name": "destination",
           "type": "directory",
-          "description": "Destination file or directory",
+          "description": "Destination directory",
           "aliases": [
             "dest"
           ]
