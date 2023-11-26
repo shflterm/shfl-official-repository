@@ -1,0 +1,3 @@
+[submodule "shuffle"]
+	path = shuffle
+	url = https://github.com/shflterm/shuffle
