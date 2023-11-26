@@ -1,4 +1,4 @@
 [submodule "shuffle"]
 	path = shuffle
 	url = https://github.com/shflterm/shuffle
-    branch = release/v1.0.0.0
+	branch = release/v1.0.0.0
