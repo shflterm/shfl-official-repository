@@ -1,13 +1,15 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <filesystem>
 #include <shfl.h>
 
 using namespace std;
+using namespace std::filesystem;
 
 COMMAND_MAIN(Workspace* ws, map<string, string>&options, bool bgMode) {
-    string text = options["text"];
-    text[0] = toupper(text[0]);
-    if (!bgMode) cout << text << endl;
-    return text;
+    string name = options["name"];
+    const path dir = ws->currentDirectory() / name;
+    create_directories(dir);
+    return dir.string();
 }
