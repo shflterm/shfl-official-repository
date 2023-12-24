@@ -1,0 +1,62 @@
+{
+  "name": "dateandtime",
+  "description": "Collection of commands related to date or time",
+  "author": "Shuffle",
+  "version": "0.0.1",
+  "api-version": 3,
+  "commands": [
+    {
+      "name": "date",
+      "usage": "date",
+      "description": "Display the current date and time",
+      "options": [],
+      "examples": [
+        "date"
+      ]
+    },
+    {
+      "name": "time",
+      "usage": "time",
+      "description": "Display the current time",
+      "options": [],
+      "examples": [
+        "time"
+      ]
+    },
+    {
+      "name": "datediff",
+      "usage": "datediff <date1> <date2>",
+      "description": "Calculate the difference in days between two dates",
+      "options": [
+        {
+          "name": "date1",
+          "type": "text",
+          "description": "First date (format: YYYY-MM-DD)"
+        },
+        {
+          "name": "date2",
+          "type": "text",
+          "description": "Second date (format: YYYY-MM-DD)"
+        }
+      ],
+      "examples": [
+        "datediff 2023-01-01 2023-12-31"
+      ]
+    },
+    {
+      "name": "timer",
+      "usage": "timer <seconds>",
+      "description": "Wait for the specified number of seconds",
+      "options": [
+        {
+          "name": "seconds",
+          "type": "number",
+          "description": "Number of seconds to wait"
+        }
+      ],
+      "examples": [
+        "timer 5"
+      ]
+    }
+  ]
+}

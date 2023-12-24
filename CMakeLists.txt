@@ -19,3 +19,4 @@ endif()
 
 add_subdirectory(filesystem)
 add_subdirectory(textutilities)
+add_subdirectory(dateandtime)
