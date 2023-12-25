@@ -1,0 +1,243 @@
+{
+  "name": "unitconverter",
+  "description": "Collection of commands related to unit conversion",
+  "author": "Shuffle",
+  "version": "0.0.1",
+  "api-version": 3,
+  "commands": [
+    {
+      "name": "convertlength",
+      "usage": "convertlength <value> <from_unit> <to_unit>",
+      "description": "Convert length units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "convertlength 10 meters feet",
+        "convertlength 100 kilometers miles"
+      ]
+    },
+    {
+      "name": "convertweight",
+      "usage": "convertweight <value> <from_unit> <to_unit>",
+      "description": "Convert weight units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "convertweight 10.0 kilograms pounds",
+        "convertweight 5.0 pounds kilograms"
+      ]
+    },
+    {
+      "name": "convertvolume",
+      "usage": "convertvolume <value> <from_unit> <to_unit>",
+      "description": "Convert volume units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "convertvolume 10.0 liters gallons",
+        "convertvolume 5.0 gallons liters"
+      ]
+    },
+    {
+      "name": "converttemperature",
+      "usage": "converttemperature <value> <from_unit> <to_unit>",
+      "description": "Convert temperature units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "converttemperature 25.0 celsius fahrenheit",
+        "converttemperature 98.6 fahrenheit celsius"
+      ]
+    },
+    {
+      "name": "convertspeed",
+      "usage": "convertspeed <value> <from_unit> <to_unit>",
+      "description": "Convert speed units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "convertspeed 100.0 kilometers_per_hour miles_per_hour",
+        "convertspeed 60.0 miles_per_hour kilometers_per_hour"
+      ]
+    },
+    {
+      "name": "converttime",
+      "usage": "converttime <value> <from_unit> <to_unit>",
+      "description": "Convert time units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "converttime 2.5 hours minutes",
+        "converttime 120 minutes hours"
+      ]
+    },
+    {
+      "name": "convertangle",
+      "usage": "convertangle <value> <from_unit> <to_unit>",
+      "description": "Convert angle units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "convertangle 180 degrees radians",
+        "convertangle 3.14 radians degrees"
+      ]
+    },
+    {
+      "name": "convertdatavolume",
+      "usage": "convertdatavolume <value> <from_unit> <to_unit>",
+      "description": "Convert data volume units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "convertdatavolume 1024 bytes kilobytes",
+        "convertdatavolume 2.5 gigabytes terabytes"
+      ]
+    },
+    {
+      "name": "convertenergy",
+      "usage": "convertenergy <value> <from_unit> <to_unit>",
+      "description": "Convert energy units",
+      "options": [
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Value to be converted"
+        },
+        {
+          "name": "from_unit",
+          "type": "text",
+          "description": "Unit of the input value"
+        },
+        {
+          "name": "to_unit",
+          "type": "text",
+          "description": "Unit to convert to"
+        }
+      ],
+      "examples": [
+        "convertenergy 1000 joules kilocalories",
+        "convertenergy 2.5 kilocalories joules"
+      ]
+    }
+  ]
+}

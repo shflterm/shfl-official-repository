@@ -14,7 +14,7 @@ COMMAND_MAIN(Workspace* ws, map<string, string>& options, bool bgMode) {
     string date1_str = options["date1"];
     string date2_str = options["date2"];
 
-    // Convert date strings to time_t
+    // Convert convertlength strings to time_t
     struct tm tm1 = {};
     struct tm tm2 = {};
 
