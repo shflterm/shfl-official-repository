@@ -33,7 +33,7 @@ jobs:
         if: matrix.config.os == 'ubuntu' || matrix.config.os == 'macos'
         run: chmod +x compress.sh
 
-      - name: Build TextUtilities App
+      - name: Build App
         run: |
           ./${{ matrix.config.cmd }} dateandtime
 
