@@ -1,6 +1,7 @@
 #include <iostream>
 #include <map>
 #include <string>
+#define _USE_MATH_DEFINES
 #include <cmath>
 #include <shfl.h>
 
@@ -8,7 +9,7 @@ using namespace std;
 
 // Function to convert angle units
 double convertAngle(double value, const string& from_unit, const string& to_unit) {
-    const double degrees_to_radians = M_PI / 180;
+    constexpr double degrees_to_radians = M_PI / 180;
 
     double result = 0.0;
 
