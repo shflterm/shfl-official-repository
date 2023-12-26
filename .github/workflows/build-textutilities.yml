@@ -15,13 +15,13 @@ jobs:
         config:
           - os: windows
             os_name: windows
-            cmd: compress.bat
+            cmd: buildandcompress.bat
           - os: ubuntu
             os_name: linux
-            cmd: compress.sh
+            cmd: buildandcompress.sh
           - os: macos
             os_name: macos
-            cmd: compress.sh
+            cmd: buildandcompress.sh
 
     steps:
       - uses: actions/checkout@v3
@@ -31,7 +31,7 @@ jobs:
 
       - name: Permission
         if: matrix.config.os == 'ubuntu' || matrix.config.os == 'macos'
-        run: chmod +x compress.sh
+        run: chmod +x buildandcompress.sh
 
       - name: Build App
         run: |
