@@ -13,17 +13,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [
@@ -39,17 +42,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [
@@ -65,17 +71,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [
@@ -91,17 +100,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [
@@ -117,17 +129,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [
@@ -143,17 +158,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [
@@ -169,17 +187,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [
@@ -195,17 +216,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [
@@ -221,17 +245,20 @@
         {
           "name": "value",
           "type": "number",
-          "description": "Value to be converted"
+          "description": "Value to be converted",
+          "required": true
         },
         {
           "name": "from_unit",
           "type": "text",
-          "description": "Unit of the input value"
+          "description": "Unit of the input value",
+          "required": true
         },
         {
           "name": "to_unit",
           "type": "text",
-          "description": "Unit to convert to"
+          "description": "Unit to convert to",
+          "required": true
         }
       ],
       "examples": [

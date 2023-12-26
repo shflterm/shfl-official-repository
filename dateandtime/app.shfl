@@ -31,12 +31,14 @@
         {
           "name": "date1",
           "type": "text",
-          "description": "First date (format: YYYY-MM-DD)"
+          "description": "First date (format: YYYY-MM-DD)",
+          "required": true
         },
         {
           "name": "date2",
           "type": "text",
-          "description": "Second date (format: YYYY-MM-DD)"
+          "description": "Second date (format: YYYY-MM-DD)",
+          "required": true
         }
       ],
       "examples": [
@@ -51,7 +53,8 @@
         {
           "name": "seconds",
           "type": "number",
-          "description": "Number of seconds to wait"
+          "description": "Number of seconds to wait",
+          "required": true
         }
       ],
       "examples": [

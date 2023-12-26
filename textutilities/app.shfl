@@ -13,7 +13,8 @@
         {
           "name": "text",
           "type": "string",
-          "description": "The text to print"
+          "description": "The text to print",
+          "required": true
         }
       ],
       "examples": [
@@ -29,7 +30,8 @@
         {
           "name": "text",
           "type": "string",
-          "description": "The text to print"
+          "description": "The text to print",
+          "required": true
         }
       ],
       "examples": [
@@ -45,7 +47,8 @@
         {
           "name": "text",
           "type": "string",
-          "description": "The text to capitalize"
+          "description": "The text to capitalize",
+          "required": true
         }
       ],
       "examples": [
@@ -61,7 +64,8 @@
         {
           "name": "text",
           "type": "string",
-          "description": "The text to trim"
+          "description": "The text to trim",
+          "required": true
         }
       ],
       "examples": [

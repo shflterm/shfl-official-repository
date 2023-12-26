@@ -97,7 +97,8 @@
           "description": "Source file or directory",
           "aliases": [
             "src"
-          ]
+          ],
+          "required": true
         },
         {
           "name": "destination",
@@ -105,7 +106,8 @@
           "description": "Destination directory",
           "aliases": [
             "dest"
-          ]
+          ],
+          "required": true
         }
       ],
       "aliases": [
@@ -124,7 +126,8 @@
         {
           "name": "path",
           "type": "fileordir",
-          "description": "File or directory to remove"
+          "description": "File or directory to remove",
+          "required": true
         }
       ],
       "aliases": [
