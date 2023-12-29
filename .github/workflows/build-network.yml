@@ -1,0 +1,46 @@
+name: Build Network
+
+on:
+  push:
+    branches: ["master"]
+    
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ${{ matrix.config.os }}-latest
+    strategy:
+      matrix:
+        config:
+          - os: windows
+            os_name: windows
+            cmd: buildandcompress.bat
+          - os: ubuntu
+            os_name: linux
+            cmd: buildandcompress.sh
+          - os: macos
+            os_name: macos
+            cmd: buildandcompress.sh
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update Submodule
+        run: git submodule update --init --recursive
+
+      - name: Permission
+        if: matrix.config.os == 'ubuntu' || matrix.config.os == 'macos'
+        run: chmod +x buildandcompress.sh
+
+      - name: Build App
+        run: |
+          ./${{ matrix.config.cmd }} network
+
+      - name: Upload Release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "network_${{ matrix.config.os_name }}"
+          files: |
+            network_${{ matrix.config.os_name }}.shflapp
