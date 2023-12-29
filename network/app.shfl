@@ -1,0 +1,33 @@
+{
+  "name": "network",
+  "description": "Collection of commands related to network",
+  "author": "Shuffle",
+  "version": "0.0.1",
+  "api-version": 3,
+  "commands": [
+    {
+      "name": "download",
+      "usage": "download <url> [output_file]",
+      "description": "Download a file from the specified URL",
+      "options": [
+        {
+          "name": "url",
+          "type": "text",
+          "description": "URL of the file to download",
+          "required": true
+        },
+        {
+          "name": "output_file",
+          "type": "text",
+          "description": "Optional: Name of the output file (default: same as the remote file)",
+          "required": false
+        }
+      ],
+      "examples": [
+        "download https://example.com/file.txt",
+        "download https://example.com/image.jpg myimage.jpg"
+      ]
+    }
+
+  ]
+}
